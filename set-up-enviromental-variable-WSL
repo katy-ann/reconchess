@@ -1,0 +1,9 @@
+this is not a permanent option and will need to be done every time you restart your terminal: 
+export PATH=/path/to/folder:$PATH
+problems with this method: at first the export PATH pointed to the right file, but when tested using python os.env it was unable to find the file. 
+double check which directory the file(s) have been stored in 
+########################################################################
+permanent option: add the variable to your .bashrc file
+to access your .bashrc file copy and paste this: vim /etc/bash.bashrc , to access your .bashrc file
+then type: export VARNAME=/path/to/whatever/you/need
+if this isn't done when you try to run the trout bot, the script will raise either a value error or a key error.
